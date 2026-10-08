@@ -1,0 +1,13 @@
+{
+  "result": "Succeeded",
+  "errors": 0,
+  "warnings": 1,
+  "duration": "00:00:41.6699687",
+  "output": "D:/UNITY/unity project/NeonOrchard/Release/NeonOrchard-test.apk",
+  "issues": [
+    {
+      "type": 2,
+      "content": "Pipeline: No RuntimePipelineConfig asset found (Project Settings > Pipeline > Runtime). Pipeline will be disabled in Player builds."
+    }
+  ]
+}

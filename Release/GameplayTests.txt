@@ -1,0 +1,2 @@
+PASS: 82386 checks; 192 complete stage playthroughs (24 stages x 8 seeds).
+Reverse prevention, buffered turns, wall/self collisions, save repair, connected stage geometry, fruit placement and completion verified.

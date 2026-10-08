@@ -1,0 +1,1 @@
+PASS: 8 screens checked without truncated text. Pause/resume, journey completion, stars, unlocks, endless failure, retry reset, and music sources verified. Touch pause button was also verified through simulated pointer input.
