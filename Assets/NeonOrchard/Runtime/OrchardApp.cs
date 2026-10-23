@@ -108,7 +108,13 @@ namespace NeonOrchard
         void Tick()
         {
             var result=Model.Step();
-            if(result==StepResult.Ate||result==StepResult.Complete) { Save.fruit++;sound.Eat();if(Save.haptics) Handheld.Vibrate(); }
+            if(result==StepResult.Ate||result==StepResult.Complete)
+            {
+                Save.fruit++;sound.Eat();
+#if UNITY_ANDROID || UNITY_IOS
+                if(Save.haptics) Handheld.Vibrate();
+#endif
+            }
             UpdateHud();
             if(result==StepResult.Crashed) { sound.Crash();Finish(false); }
             else if(result==StepResult.Complete) { sound.Win();Finish(true); }
